@@ -1,30 +1,52 @@
 body {
   overflow-x: hidden;
+
   font-family: "Montserrat", sans-serif;
 }
-.search-field {
-  border: none;
-  border-radius: 50px;
-  padding: 5px;
-  outline: none;
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
+
+.alvi-span {
+  margin-left: 12px;
+  margin-right: 12px;
+  color: teal;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #ffffff;
+}
+
 .search-field:hover {
   outline: none;
   border: none;
 }
+
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
-  width: 281px;
-  border-radius: 5px;
-  margin: auto;
-  margin-top: 50px;
-  border-right: none;
+  width: 600px;
+  margin-top: 25px;
+  padding: 10px;
 }
+
 .search-button {
-  padding: 10px 50px;
-  border-radius: 25px;
-  margin-left: 20px;
+  margin-left: -10px;
+  margin-top: 25px;
+  padding: 10px;
 }
+
+.button {
+  background-color: cornflowerblue;
+  height: 34px;
+  border-radius: 4px;
+}
+
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -32,22 +54,34 @@ body {
   text-align: center;
   width: 100%;
   margin: auto;
+  margin-left: 10px;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
+
 .single-product {
   padding: 10px;
   transition: 0.6s;
+  background-image: linear-gradient(rgba(94, 25, 206, 0), rgb(216, 196, 196));
+  margin: 2px;
+  margin-top: 5px;
+  height: 480px;
+  width: auto;
+  border: 1px solid gray;
 }
+
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
-  border: 1px solid cyan;
+  border: 1px solid #728FCE;
 }
+
 .product-image {
   width: 150px;
   height: 150px;
 }
+
 .cart {
   width: 350px;
   /* border: 1px solid green; */
@@ -57,14 +91,17 @@ body {
   margin-right: 30px;
   position: fixed;
 }
+
 .cart-main {
   padding-right: 30px;
 }
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+
   .cart {
     width: 300px;
     /* border: 1px solid green; */
@@ -74,10 +111,12 @@ body {
     margin-right: 30px;
     position: fixed;
   }
+
   .cart-main {
     padding-right: 10px;
   }
 }
+
 @media only screen and (max-width: 468px) {
   #all-products {
     display: grid;
